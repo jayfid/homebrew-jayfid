@@ -5,7 +5,7 @@ class OrchardUtils < Formula
   sha256 "1528c068717534109222d84c4a1252a7d0ef04fccf81f439ad3d744af23aa3e9"
   license "MIT"
 
-  # depends_on "cmake" => :build
+  depends_on "aws"
 
   def install
     bin.install 'aws-creds-generator/generate.sh'
